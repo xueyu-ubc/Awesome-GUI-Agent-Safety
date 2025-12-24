@@ -1,3 +1,5 @@
+<div align="center">
+
 # 🛡️ Awesome GUI Agent Safety
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
@@ -10,6 +12,8 @@
 [🔑 Papers by Keywords](#papers-grouped-by-keywords) •
 [📝 All Papers](#all-papers-from-most-recent-to-oldest) •
 [➕ Contributing](#How-to-Add-a-Paper)
+
+</div>
 
 ---
 
