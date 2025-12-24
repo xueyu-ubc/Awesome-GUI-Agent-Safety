@@ -59,7 +59,7 @@ This repository covers a variety of papers related to **GUI Agent Safety**, incl
 ---
 
 ## Papers Grouped by Keywords
-[evaluation (22)](paper_by_key/paper_evaluation.md) | [benchmark (18)](paper_by_key/paper_benchmark.md) | [risk (16)](paper_by_key/paper_risk.md) | [attack (10)](paper_by_key/paper_attack.md) | [injection (8)](paper_by_key/paper_injection.md) | [framework (7)](paper_by_key/paper_framework.md) | [dataset (4)](paper_by_key/paper_dataset.md) | [privacy (4)](paper_by_key/paper_privacy.md) | [survey (2)](paper_by_key/paper_survey.md) | [misuse (2)](paper_by_key/paper_misuse.md) | [method (2)](paper_by_key/paper_method.md) | [multi-agent (2)](paper_by_key/paper_multi-agent.md) | [jailbreaking (2)](paper_by_key/paper_jailbreaking.md) | [untrustworthy (1)](paper_by_key/paper_untrustworthy.md) | [verification (1)](paper_by_key/paper_verification.md) | [tool (1)](paper_by_key/paper_tool.md) | [trustworthiness (1)](paper_by_key/paper_trustworthiness.md) | [platform (1)](paper_by_key/paper_platform.md) | [pop-ups (1)](paper_by_key/paper_pop-ups.md) | [black-box (1)](paper_by_key/paper_black-box.md)
+[evaluation (23)](paper_by_key/paper_evaluation.md) | [benchmark (19)](paper_by_key/paper_benchmark.md) | [risk (16)](paper_by_key/paper_risk.md) | [attack (10)](paper_by_key/paper_attack.md) | [injection (8)](paper_by_key/paper_injection.md) | [framework (7)](paper_by_key/paper_framework.md) | [dataset (4)](paper_by_key/paper_dataset.md) | [privacy (4)](paper_by_key/paper_privacy.md) | [survey (2)](paper_by_key/paper_survey.md) | [misuse (2)](paper_by_key/paper_misuse.md) | [method (2)](paper_by_key/paper_method.md) | [multi-agent (2)](paper_by_key/paper_multi-agent.md) | [jailbreaking (2)](paper_by_key/paper_jailbreaking.md) | [untrustworthy (1)](paper_by_key/paper_untrustworthy.md) | [verification (1)](paper_by_key/paper_verification.md) | [tool (1)](paper_by_key/paper_tool.md) | [trustworthiness (1)](paper_by_key/paper_trustworthiness.md) | [platform (1)](paper_by_key/paper_platform.md) | [pop-ups (1)](paper_by_key/paper_pop-ups.md) | [black-box (1)](paper_by_key/paper_black-box.md)
 
 
 ## All Papers (from most recent to oldest)
@@ -120,15 +120,6 @@ This repository covers a variety of papers related to **GUI Agent Safety**, incl
     - 🔑 Key: [method], [evaluation], [verification]
     - 📖 TLDR: we introduce VeriSafe Agent (VSA): a formal verification system that serves as a logically grounded safeguard for Mobile GUI Agents. VSA deterministically ensures that an agent's actions strictly align with user intent before executing the action. At its core, VSA introduces a novel autoformalization technique that translates natural language user instructions into a formally verifiable specification. This enables runtime, rule-based verification of agent's actions, detecting erroneous actions even before they take effect. [Github](https://github.com/VeriSafeAgent/VeriSafeAgent)
 
-- [HAICOSYSTEM: An Ecosystem for Sandboxing Safety Risks in Human-AI Interactions](https://arxiv.org/abs/2409.16427)
-    - Xuhui Zhou, Hyunwoo Kim, Faeze Brahman, Liwei Jiang, Hao Zhu, Ximing Lu, Frank Xu, Bill Yuchen Lin, Yejin Choi, Niloofar Mireshghallah, Ronan Le Bras, Maarten Sap
-    - 🏛️ Institutions: Carnegie Mellon University, Allen Institute for AI
-    - 📅 Date: Aug. 30, 2025
-    - 📑 Publisher: COLM 2025
-    - 💻 Env: [Misc]
-    - 🔑 Key: [risk], [evaluation], [framework], [benchmark]
-    - 📖 TLDR: HAICOSYSTEM is a framework that assesses AI agent safety in complex social interactions through a modular sandbox. It features a multi-dimensional evaluation covering operational, content, societal, and legal risks. Simulating over 8,000 interactions across 132 scenarios in seven domains, the study finds that state-of-the-art LLMs pose safety risks in 62% of cases, especially during tool use with malicious users. This underscores the critical need to address safety in dynamic human-AI-environment interactions. [Github](https://github.com/XuhuiZhou/HAICosystem)
-
 - [Progent: Programmable Privilege Control for LLM Agents](https://arxiv.org/abs/2504.11703)
     - Tianneng Shi, Jingxuan He, Zhun Wang, Hongwei Li, Linyu Wu, Wenbo Guo, Dawn Song
     - 🏛️ Institutions: UC Berkeley, UC Santa Barbara, National University of Singapore
@@ -137,6 +128,15 @@ This repository covers a variety of papers related to **GUI Agent Safety**, incl
     - 💻 Env: [Misc]
     - 🔑 Key: [risk], [injection], [tool]
     - 📖 TLDR: LLM agents use LLMs and tools to perform user tasks but face security risks from external environments, like prompt injection and malicious tools, enabling dangerous actions such as financial fraud or data leakage. The core vulnerability is **over-privileged tool access**. This work introduces **Progent**, the first privilege control framework for securing LLM agents. Progent enforces tool-level security by restricting agents to necessary tool calls while blocking malicious ones, using a domain-specific language for fine-grained policy control. Progent operates deterministically at runtime, offering provable security without altering agent internals.
+
+- [HAICOSYSTEM: An Ecosystem for Sandboxing Safety Risks in Human-AI Interactions](https://arxiv.org/abs/2409.16427)
+    - Xuhui Zhou, Hyunwoo Kim, Faeze Brahman, Liwei Jiang, Hao Zhu, Ximing Lu, Frank Xu, Bill Yuchen Lin, Yejin Choi, Niloofar Mireshghallah, Ronan Le Bras, Maarten Sap
+    - 🏛️ Institutions: Carnegie Mellon University, Allen Institute for AI
+    - 📅 Date: Aug. 30, 2025
+    - 📑 Publisher: COLM 2025
+    - 💻 Env: [Misc]
+    - 🔑 Key: [risk], [evaluation], [framework], [benchmark]
+    - 📖 TLDR: HAICOSYSTEM is a framework that assesses AI agent safety in complex social interactions through a modular sandbox. It features a multi-dimensional evaluation covering operational, content, societal, and legal risks. Simulating over 8,000 interactions across 132 scenarios in seven domains, the study finds that state-of-the-art LLMs pose safety risks in 62% of cases, especially during tool use with malicious users. This underscores the critical need to address safety in dynamic human-AI-environment interactions. [Github](https://github.com/XuhuiZhou/HAICosystem)
 
 - [Magentic-UI: Towards Human-in-the-loop Agentic Systems](https://arxiv.org/abs/2507.22358)
     - Hussein Mozannar, Gagan Bansal, Cheng Tan, Adam Fourney, Victor Dibia, Jingya Chen, Jack Gerrits, Tyler Payne, Matheus Kunzler Maldaner, Madeleine Grunde-McLaughlin, Eric Zhu, Griffin Bassman, Jacob Alber, Peter Chang, Ricky Loynd, Friederike Niedtner, Ece Kamar, Maya Murad, Rafah Hosn, Saleema Amershi
@@ -371,6 +371,15 @@ This repository covers a variety of papers related to **GUI Agent Safety**, incl
     - 💻 Env: [Web]
     - 🔑 Key: [benchmark], [risk], [attack], [evaluation]
     - 📖 TLDR: This paper investigates the safety risks posed by multimodal agents built on vision-enabled language models (VLMs). The authors introduce two adversarial attack methods: a captioner attack targeting white-box captioners and a CLIP attack that transfers to proprietary VLMs. To evaluate these attacks, they curated VisualWebArena-Adv, a set of adversarial tasks based on VisualWebArena. The study demonstrates that within a limited perturbation norm, the captioner attack can achieve a 75% success rate in making a captioner-augmented GPT-4V agent execute adversarial goals. The paper also discusses the robustness of agents based on other VLMs and provides insights into factors contributing to attack success and potential defenses. [Github](https://github.com/ChenWu98/agent-attack)
+
+- [Introducing v0.5 of the AI Safety Benchmark from MLCommons](https://arxiv.org/abs/2404.12241)
+    -  MLCommons AI Safety Working Group (WG)
+    - 🏛️ Institutions:  MLCommons AI Safety Working Group (WG), et al.
+    - 📅 Date: May. 13 2024
+    - 📑 Publisher: arXiv
+    - 💻 Env: [Mobile]
+    - 🔑 Key: [benchmark], [evaluation], [AI-Safety], [AI-systems]
+    - 📖 TLDR: This paper introduces v0.5 of the AI Safety Benchmark, which has been created by the MLCommons AI Safety Working Group. The AI Safety Benchmark has been designed to assess the safety risks of AI systems that use chat-tuned language models. We introduce a principled approach to specifying and constructing the benchmark, which for v0.5 covers only a single use case (an adult chatting to a general-purpose assistant in English), and a limited set of personas (i.e., typical users, malicious users, and vulnerable users). We created a new taxonomy of 13 hazard categories, of which 7 have tests in the v0.5 benchmark. This release of v0.5 of the AI Safety Benchmark includes (1) a principled approach to specifying and constructing the benchmark, which comprises use cases, types of systems under test (SUTs), language and context, personas, tests, and test items; (2) a taxonomy of 13 hazard categories with definitions and subcategories; (3) tests for seven of the hazard categories, each comprising a unique set of test items, i.e., prompts. There are 43,090 test items in total, which we created with templates; (4) a grading system for AI systems against the benchmark; (5) an openly available platform, and downloadable tool, called ModelBench that can be used to evaluate the safety of AI systems on the benchmark; (6) an example evaluation report which benchmarks the performance of over a dozen openly available chat-tuned language models; (7) a test specification for the benchmark.
 
 - [Watch Out for Your Agents! Investigating Backdoor Threats to LLM-Based Agents](https://arxiv.org/abs/2402.11208)
     - Wenkai Yang, Xiaohan Bi, Yankai Lin, Sishuo Chen, Jie Zhou, Xu Sun
