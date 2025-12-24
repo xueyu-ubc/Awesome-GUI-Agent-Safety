@@ -18,15 +18,6 @@
     - 🔑 Key: [benchmark], [risk], [privacy]
     - 📖 TLDR: This work presents AGENTDAM, a new benchmark for evaluating whether AI web-navigation agents adhere to the privacy principle of data minimization—using sensitive information only when strictly necessary for a task. It simulates end-to-end web interactions and is adaptable to all existing agents. Evaluations of GPT-4, Llama-3, and Claude agents reveal they often inadvertently process unnecessary private data. The study also proposes a prompting-based defense to reduce leakage and shows that this end-to-end benchmarking offers a more realistic privacy assessment than simply probing LLMs. [Github](https://github.com/facebookresearch/ai-agent-privacy)
 
-- [HAICOSYSTEM: An Ecosystem for Sandboxing Safety Risks in Human-AI Interactions](https://arxiv.org/abs/2409.16427)
-    - Xuhui Zhou, Hyunwoo Kim, Faeze Brahman, Liwei Jiang, Hao Zhu, Ximing Lu, Frank Xu, Bill Yuchen Lin, Yejin Choi, Niloofar Mireshghallah, Ronan Le Bras, Maarten Sap
-    - 🏛️ Institutions: Carnegie Mellon University, Allen Institute for AI
-    - 📅 Date: Aug. 30, 2025
-    - 📑 Publisher: COLM 2025
-    - 💻 Env: [Misc]
-    - 🔑 Key: [risk], [evaluation], [framework], [benchmark]
-    - 📖 TLDR: HAICOSYSTEM is a framework that assesses AI agent safety in complex social interactions through a modular sandbox. It features a multi-dimensional evaluation covering operational, content, societal, and legal risks. Simulating over 8,000 interactions across 132 scenarios in seven domains, the study finds that state-of-the-art LLMs pose safety risks in 62% of cases, especially during tool use with malicious users. This underscores the critical need to address safety in dynamic human-AI-environment interactions. [Github](https://github.com/XuhuiZhou/HAICosystem)
-
 - [Progent: Programmable Privilege Control for LLM Agents](https://arxiv.org/abs/2504.11703)
     - Tianneng Shi, Jingxuan He, Zhun Wang, Hongwei Li, Linyu Wu, Wenbo Guo, Dawn Song
     - 🏛️ Institutions: UC Berkeley, UC Santa Barbara, National University of Singapore
@@ -35,6 +26,15 @@
     - 💻 Env: [Misc]
     - 🔑 Key: [risk], [injection], [tool]
     - 📖 TLDR: LLM agents use LLMs and tools to perform user tasks but face security risks from external environments, like prompt injection and malicious tools, enabling dangerous actions such as financial fraud or data leakage. The core vulnerability is **over-privileged tool access**. This work introduces **Progent**, the first privilege control framework for securing LLM agents. Progent enforces tool-level security by restricting agents to necessary tool calls while blocking malicious ones, using a domain-specific language for fine-grained policy control. Progent operates deterministically at runtime, offering provable security without altering agent internals.
+
+- [HAICOSYSTEM: An Ecosystem for Sandboxing Safety Risks in Human-AI Interactions](https://arxiv.org/abs/2409.16427)
+    - Xuhui Zhou, Hyunwoo Kim, Faeze Brahman, Liwei Jiang, Hao Zhu, Ximing Lu, Frank Xu, Bill Yuchen Lin, Yejin Choi, Niloofar Mireshghallah, Ronan Le Bras, Maarten Sap
+    - 🏛️ Institutions: Carnegie Mellon University, Allen Institute for AI
+    - 📅 Date: Aug. 30, 2025
+    - 📑 Publisher: COLM 2025
+    - 💻 Env: [Misc]
+    - 🔑 Key: [risk], [evaluation], [framework], [benchmark]
+    - 📖 TLDR: HAICOSYSTEM is a framework that assesses AI agent safety in complex social interactions through a modular sandbox. It features a multi-dimensional evaluation covering operational, content, societal, and legal risks. Simulating over 8,000 interactions across 132 scenarios in seven domains, the study finds that state-of-the-art LLMs pose safety risks in 62% of cases, especially during tool use with malicious users. This underscores the critical need to address safety in dynamic human-AI-environment interactions. [Github](https://github.com/XuhuiZhou/HAICosystem)
 
 - [Toward a Human-Centered Evaluation Framework for Trustworthy LLM-Powered GUI Agents](https://arxiv.org/abs/2504.17934)
     - Chaoran Chen, Zhiping Zhang, Ibrahim Khalilov, Bingcan Guo, Simret A Gebreegziabher, Yanfang Ye, Ziang Xiao, Yaxing Yao, Tianshi Li, Toby Jia-Jun Li
