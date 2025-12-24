@@ -21,7 +21,7 @@
 
 - [🛡️ Awesome GUI Agent Safety](#️-awesome-gui-agent-safety)
   - [📖 Table of Contents](#-table-of-contents)
-  - [Overview](#overview)
+  - [🌐 Overview](#-overview)
   - [📊 Keyword Visualization](#-keyword-visualization)
   - [Papers Grouped by Environments](#papers-grouped-by-environments)
   - [Papers Grouped by Keywords](#papers-grouped-by-keywords)
@@ -32,7 +32,7 @@
 
 ---
 
-## Overview
+## 🌐 Overview
 
 This repository covers a variety of papers related to **GUI Agent Safety**, including:
 
