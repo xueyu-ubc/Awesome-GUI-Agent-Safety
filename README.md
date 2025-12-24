@@ -9,7 +9,7 @@
 [📚 Papers by Environment](#papers-grouped-by-environments) •
 [🔑 Papers by Keywords](#papers-grouped-by-keywords) •
 [📝 All Papers](#all-papers-from-most-recent-to-oldest) •
-[➕ Contributing](#how-to-add-a-paper-or-update-the-readme)
+[➕ Contributing](#How-to-Add-a-Paper)
 
 ---
 
@@ -392,7 +392,6 @@ This repository covers a variety of papers related to **GUI Agent Safety**, incl
 </details>
 
 </details>
-
 
 ## How to Add a Paper
 
