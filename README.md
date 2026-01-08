@@ -465,7 +465,7 @@ You may include multiple keywords, but to maintain consistency, we recommend usi
 
 This repository references the initial template provided by the OSU-NLP-Group. See the original work at [GUI-Agents-Paper-List](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List).
 
-We are grateful for their excellent work and highly recommend checking out and starring their curated collection of GUI agent papers. Furthermore, we extend our sincere gratitude to all contributors of this repository. If you are interested in our work, please star our repository!
+We are grateful for their excellent works and highly recommend checking out and starring their curated collection of GUI agent papers. Furthermore, we extend our sincere gratitude to all contributors of this repository. If you are interested in our work, please star our repository!
 
 
 
