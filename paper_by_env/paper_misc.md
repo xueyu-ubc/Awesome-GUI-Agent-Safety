@@ -1,11 +1,11 @@
-- [Progent: Programmable Privilege Control for LLM Agents](https://arxiv.org/abs/2504.11703)
-    - Tianneng Shi, Jingxuan He, Zhun Wang, Hongwei Li, Linyu Wu, Wenbo Guo, Dawn Song
-    - 🏛️ Institutions: UC Berkeley, UC Santa Barbara, National University of Singapore
-    - 📅 Date: Aug. 30, 2025
+- [Qwen3Guard Technical Report](https://arxiv.org/pdf/2510.14276)
+    -  Qwen Team
+    - 🏛️ Institutions:  Qwen Team
+    - 📅 Date: Oct. 16, 2025
     - 📑 Publisher: arXiv
     - 💻 Env: [Misc]
-    - 🔑 Key: [risk], [injection], [tool]
-    - 📖 TLDR: LLM agents use LLMs and tools to perform user tasks but face security risks from external environments, like prompt injection and malicious tools, enabling dangerous actions such as financial fraud or data leakage. The core vulnerability is **over-privileged tool access**. This work introduces **Progent**, the first privilege control framework for securing LLM agents. Progent enforces tool-level security by restricting agents to necessary tool calls while blocking malicious ones, using a domain-specific language for fine-grained policy control. Progent operates deterministically at runtime, offering provable security without altering agent internals.
+    - 🔑 Key: [benchmark], [evaluation], [AI-Safety], [Model]
+    - 📖 TLDR: Existing LLM safety classifiers are limited by binary labels and delayed detection. We introduce Qwen3Guard, a multilingual safety model series featuring: (1) Generative Qwen3Guard for fine‑grained tri‑class classification (safe/controversial/unsafe). (2) Stream Qwen3Guard for real‑time, token‑level monitoring during streaming generation.
 
 - [HAICOSYSTEM: An Ecosystem for Sandboxing Safety Risks in Human-AI Interactions](https://arxiv.org/abs/2409.16427)
     - Xuhui Zhou, Hyunwoo Kim, Faeze Brahman, Liwei Jiang, Hao Zhu, Ximing Lu, Frank Xu, Bill Yuchen Lin, Yejin Choi, Niloofar Mireshghallah, Ronan Le Bras, Maarten Sap
@@ -15,6 +15,15 @@
     - 💻 Env: [Misc]
     - 🔑 Key: [risk], [evaluation], [framework], [benchmark]
     - 📖 TLDR: HAICOSYSTEM is a framework that assesses AI agent safety in complex social interactions through a modular sandbox. It features a multi-dimensional evaluation covering operational, content, societal, and legal risks. Simulating over 8,000 interactions across 132 scenarios in seven domains, the study finds that state-of-the-art LLMs pose safety risks in 62% of cases, especially during tool use with malicious users. This underscores the critical need to address safety in dynamic human-AI-environment interactions. [Github](https://github.com/XuhuiZhou/HAICosystem)
+
+- [Progent: Programmable Privilege Control for LLM Agents](https://arxiv.org/abs/2504.11703)
+    - Tianneng Shi, Jingxuan He, Zhun Wang, Hongwei Li, Linyu Wu, Wenbo Guo, Dawn Song
+    - 🏛️ Institutions: UC Berkeley, UC Santa Barbara, National University of Singapore
+    - 📅 Date: Aug. 30, 2025
+    - 📑 Publisher: arXiv
+    - 💻 Env: [Misc]
+    - 🔑 Key: [risk], [injection], [tool]
+    - 📖 TLDR: LLM agents use LLMs and tools to perform user tasks but face security risks from external environments, like prompt injection and malicious tools, enabling dangerous actions such as financial fraud or data leakage. The core vulnerability is **over-privileged tool access**. This work introduces **Progent**, the first privilege control framework for securing LLM agents. Progent enforces tool-level security by restricting agents to necessary tool calls while blocking malicious ones, using a domain-specific language for fine-grained policy control. Progent operates deterministically at runtime, offering provable security without altering agent internals.
 
 - [Toward a Human-Centered Evaluation Framework for Trustworthy LLM-Powered GUI Agents](https://arxiv.org/abs/2504.17934)
     - Chaoran Chen, Zhiping Zhang, Ibrahim Khalilov, Bingcan Guo, Simret A Gebreegziabher, Yanfang Ye, Ziang Xiao, Yaxing Yao, Tianshi Li, Toby Jia-Jun Li
@@ -60,6 +69,15 @@
     - 💻 Env: [Misc]
     - 🔑 Key: [multi-agent], [evaluation], [dataset], [privacy]
     - 📖 TLDR: This paper identified three key challenges in Federated Multi-Agent Systems (MAS): heterogeneous privacy, structural conversational differences, and dynamic network topologies. To solve these, they introduce Embedded Privacy-Enhancing Agents (EPEAgent). EPEAgent seamlessly integrates into the Retrieval-Augmented Generation (RAG) and context retrieval phases, minimizing data sharing to only task-relevant information. They also created a comprehensive evaluation dataset. Experiments confirm EPEAgent significantly enhances privacy protection while maintaining high system performance.
+
+- [AEGIS2.0: A Diverse AI Safety Dataset and Risks Taxonomy for Alignment of LLM Guardrails](https://arxiv.org/pdf/2501.09004)
+    -  Shaona Ghosh, Prasoon Varshney, Makesh Narsimhan Sreedhar, Aishwarya Padmakumar, Traian Rebedea, Jibin Rajan Varghese, Christopher Parisien
+    - 🏛️ Institutions:  Nvidia
+    - 📅 Date: Jan. 15, 2025
+    - 📑 Publisher: arXiv
+    - 💻 Env: [Misc]
+    - 🔑 Key: [dataset], [evaluation], [AI-Safety]
+    - 📖 TLDR: To address the lack of high-quality, commercially usable safety datasets for LLMs, we created Aegis 2.0. This dataset features a novel, fine-grained taxonomy (12 main hazard categories, 9 subcategories) for classifying risks. It contains over 34,000 human-LLM interactions, annotated via a hybrid human+LLM jury pipeline. Crucially, lightweight models fine-tuned on Aegis 2.0 match the performance of models trained on much larger, non-commercial datasets. We also introduce a safety+topic training blend that improves model adaptability to new risks. All data and models will be open-sourced to advance LLM safety research.
 
 - [Improved Large Language Model Jailbreak Detection via Pretrained Embeddings](https://arxiv.org/pdf/2412.01547)
     - Erick Galinkin, Martin Sablotny

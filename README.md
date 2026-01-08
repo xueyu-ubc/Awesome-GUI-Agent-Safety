@@ -21,7 +21,7 @@
 
 - [🛡️ Awesome GUI Agent Safety](#️-awesome-gui-agent-safety)
   - [📖 Table of Contents](#-table-of-contents)
-  - [Overview](#overview)
+  - [🌐 Overview](#-overview)
   - [📊 Keyword Visualization](#-keyword-visualization)
   - [Papers Grouped by Environments](#papers-grouped-by-environments)
   - [Papers Grouped by Keywords](#papers-grouped-by-keywords)
@@ -32,7 +32,7 @@
 
 ---
 
-## Overview
+## 🌐 Overview
 
 This repository covers a variety of papers related to **GUI Agent Safety**, including:
 
@@ -63,7 +63,7 @@ This repository covers a variety of papers related to **GUI Agent Safety**, incl
 ---
 
 ## Papers Grouped by Keywords
-[evaluation (23)](paper_by_key/paper_evaluation.md) | [benchmark (19)](paper_by_key/paper_benchmark.md) | [risk (16)](paper_by_key/paper_risk.md) | [attack (10)](paper_by_key/paper_attack.md) | [injection (8)](paper_by_key/paper_injection.md) | [framework (7)](paper_by_key/paper_framework.md) | [dataset (4)](paper_by_key/paper_dataset.md) | [privacy (4)](paper_by_key/paper_privacy.md) | [survey (2)](paper_by_key/paper_survey.md) | [misuse (2)](paper_by_key/paper_misuse.md) | [method (2)](paper_by_key/paper_method.md) | [multi-agent (2)](paper_by_key/paper_multi-agent.md) | [jailbreaking (2)](paper_by_key/paper_jailbreaking.md) | [untrustworthy (1)](paper_by_key/paper_untrustworthy.md) | [verification (1)](paper_by_key/paper_verification.md) | [tool (1)](paper_by_key/paper_tool.md) | [trustworthiness (1)](paper_by_key/paper_trustworthiness.md) | [platform (1)](paper_by_key/paper_platform.md) | [pop-ups (1)](paper_by_key/paper_pop-ups.md) | [black-box (1)](paper_by_key/paper_black-box.md)
+[evaluation (25)](paper_by_key/paper_evaluation.md) | [benchmark (20)](paper_by_key/paper_benchmark.md) | [risk (16)](paper_by_key/paper_risk.md) | [attack (10)](paper_by_key/paper_attack.md) | [injection (8)](paper_by_key/paper_injection.md) | [framework (7)](paper_by_key/paper_framework.md) | [dataset (5)](paper_by_key/paper_dataset.md) | [privacy (4)](paper_by_key/paper_privacy.md) | [AI-Safety (3)](paper_by_key/paper_AI-Safety.md) | [survey (2)](paper_by_key/paper_survey.md) | [misuse (2)](paper_by_key/paper_misuse.md) | [method (2)](paper_by_key/paper_method.md) | [multi-agent (2)](paper_by_key/paper_multi-agent.md) | [jailbreaking (2)](paper_by_key/paper_jailbreaking.md) | [Model (1)](paper_by_key/paper_Model.md) | [untrustworthy (1)](paper_by_key/paper_untrustworthy.md) | [verification (1)](paper_by_key/paper_verification.md) | [tool (1)](paper_by_key/paper_tool.md) | [trustworthiness (1)](paper_by_key/paper_trustworthiness.md) | [platform (1)](paper_by_key/paper_platform.md)
 
 
 ## All Papers (from most recent to oldest)
@@ -97,6 +97,15 @@ This repository covers a variety of papers related to **GUI Agent Safety**, incl
     - 🔑 Key: [benchmark], [evaluation], [misuse], [injection]
     - 📖 TLDR: Computer use agents, LLM-based systems interacting with GUIs via screenshots or accessibility trees, lack safety evaluation. This paper introduces OS-HARM, a benchmark built on OSWorld with 150 tasks across three harm categories: deliberate misuse, prompt injection, and model misbehavior (e.g., harassment, data exfiltration). An automated judge assesses both accuracy and safety. Frontier models (like o4-mini, Claude 3.7 Sonnet, Gemini 2.5 Pro) evaluated show high compliance with misuse queries, vulnerability to static prompt injections, and occasional unsafe actions. [Github](https://github.com/tml-epfl/os-harm)
 
+- [Qwen3Guard Technical Report](https://arxiv.org/pdf/2510.14276)
+    -  Qwen Team
+    - 🏛️ Institutions:  Qwen Team
+    - 📅 Date: Oct. 16, 2025
+    - 📑 Publisher: arXiv
+    - 💻 Env: [Misc]
+    - 🔑 Key: [benchmark], [evaluation], [AI-Safety], [Model]
+    - 📖 TLDR: Existing LLM safety classifiers are limited by binary labels and delayed detection. We introduce Qwen3Guard, a multilingual safety model series featuring: (1) Generative Qwen3Guard for fine‑grained tri‑class classification (safe/controversial/unsafe). (2) Stream Qwen3Guard for real‑time, token‑level monitoring during streaming generation.
+
 - [AgentDAM: Privacy Leakage Evaluation for Autonomous Web Agents](https://arxiv.org/pdf/2503.09780)
     - Arman Zharmagambetov, Chuan Guo, Ivan Evtimov, Maya Pavlova, Ruslan Salakhutdinov, Kamalika Chaudhuri
     - 🏛️ Institutions: Meta
@@ -124,15 +133,6 @@ This repository covers a variety of papers related to **GUI Agent Safety**, incl
     - 🔑 Key: [method], [evaluation], [verification]
     - 📖 TLDR: we introduce VeriSafe Agent (VSA): a formal verification system that serves as a logically grounded safeguard for Mobile GUI Agents. VSA deterministically ensures that an agent's actions strictly align with user intent before executing the action. At its core, VSA introduces a novel autoformalization technique that translates natural language user instructions into a formally verifiable specification. This enables runtime, rule-based verification of agent's actions, detecting erroneous actions even before they take effect. [Github](https://github.com/VeriSafeAgent/VeriSafeAgent)
 
-- [Progent: Programmable Privilege Control for LLM Agents](https://arxiv.org/abs/2504.11703)
-    - Tianneng Shi, Jingxuan He, Zhun Wang, Hongwei Li, Linyu Wu, Wenbo Guo, Dawn Song
-    - 🏛️ Institutions: UC Berkeley, UC Santa Barbara, National University of Singapore
-    - 📅 Date: Aug. 30, 2025
-    - 📑 Publisher: arXiv
-    - 💻 Env: [Misc]
-    - 🔑 Key: [risk], [injection], [tool]
-    - 📖 TLDR: LLM agents use LLMs and tools to perform user tasks but face security risks from external environments, like prompt injection and malicious tools, enabling dangerous actions such as financial fraud or data leakage. The core vulnerability is **over-privileged tool access**. This work introduces **Progent**, the first privilege control framework for securing LLM agents. Progent enforces tool-level security by restricting agents to necessary tool calls while blocking malicious ones, using a domain-specific language for fine-grained policy control. Progent operates deterministically at runtime, offering provable security without altering agent internals.
-
 - [HAICOSYSTEM: An Ecosystem for Sandboxing Safety Risks in Human-AI Interactions](https://arxiv.org/abs/2409.16427)
     - Xuhui Zhou, Hyunwoo Kim, Faeze Brahman, Liwei Jiang, Hao Zhu, Ximing Lu, Frank Xu, Bill Yuchen Lin, Yejin Choi, Niloofar Mireshghallah, Ronan Le Bras, Maarten Sap
     - 🏛️ Institutions: Carnegie Mellon University, Allen Institute for AI
@@ -141,6 +141,15 @@ This repository covers a variety of papers related to **GUI Agent Safety**, incl
     - 💻 Env: [Misc]
     - 🔑 Key: [risk], [evaluation], [framework], [benchmark]
     - 📖 TLDR: HAICOSYSTEM is a framework that assesses AI agent safety in complex social interactions through a modular sandbox. It features a multi-dimensional evaluation covering operational, content, societal, and legal risks. Simulating over 8,000 interactions across 132 scenarios in seven domains, the study finds that state-of-the-art LLMs pose safety risks in 62% of cases, especially during tool use with malicious users. This underscores the critical need to address safety in dynamic human-AI-environment interactions. [Github](https://github.com/XuhuiZhou/HAICosystem)
+
+- [Progent: Programmable Privilege Control for LLM Agents](https://arxiv.org/abs/2504.11703)
+    - Tianneng Shi, Jingxuan He, Zhun Wang, Hongwei Li, Linyu Wu, Wenbo Guo, Dawn Song
+    - 🏛️ Institutions: UC Berkeley, UC Santa Barbara, National University of Singapore
+    - 📅 Date: Aug. 30, 2025
+    - 📑 Publisher: arXiv
+    - 💻 Env: [Misc]
+    - 🔑 Key: [risk], [injection], [tool]
+    - 📖 TLDR: LLM agents use LLMs and tools to perform user tasks but face security risks from external environments, like prompt injection and malicious tools, enabling dangerous actions such as financial fraud or data leakage. The core vulnerability is **over-privileged tool access**. This work introduces **Progent**, the first privilege control framework for securing LLM agents. Progent enforces tool-level security by restricting agents to necessary tool calls while blocking malicious ones, using a domain-specific language for fine-grained policy control. Progent operates deterministically at runtime, offering provable security without altering agent internals.
 
 - [Magentic-UI: Towards Human-in-the-loop Agentic Systems](https://arxiv.org/abs/2507.22358)
     - Hussein Mozannar, Gagan Bansal, Cheng Tan, Adam Fourney, Victor Dibia, Jingya Chen, Jack Gerrits, Tyler Payne, Matheus Kunzler Maldaner, Madeleine Grunde-McLaughlin, Eric Zhu, Griffin Bassman, Jacob Alber, Peter Chang, Ricky Loynd, Friederike Niedtner, Ece Kamar, Maya Murad, Rafah Hosn, Saleema Amershi
@@ -249,6 +258,15 @@ This repository covers a variety of papers related to **GUI Agent Safety**, incl
     - 💻 Env: [Mobile]
     - 🔑 Key: [evaluation], [injection], [attack]
     - 📖 TLDR: This paper introduces the concept of Active Environment Injection Attack (AEIA), where attackers disguise malicious actions as environmental elements to disrupt AI agents' decision-making processes. The authors propose AEIA-MN, an attack scheme leveraging mobile notifications to evaluate the robustness of multimodal large language model-based mobile agents. Experimental results demonstrate that even advanced models are highly vulnerable to such attacks, with success rates reaching up to 93% in the AndroidWorld benchmark.
+
+- [AEGIS2.0: A Diverse AI Safety Dataset and Risks Taxonomy for Alignment of LLM Guardrails](https://arxiv.org/pdf/2501.09004)
+    -  Shaona Ghosh, Prasoon Varshney, Makesh Narsimhan Sreedhar, Aishwarya Padmakumar, Traian Rebedea, Jibin Rajan Varghese, Christopher Parisien
+    - 🏛️ Institutions:  Nvidia
+    - 📅 Date: Jan. 15, 2025
+    - 📑 Publisher: arXiv
+    - 💻 Env: [Misc]
+    - 🔑 Key: [dataset], [evaluation], [AI-Safety]
+    - 📖 TLDR: To address the lack of high-quality, commercially usable safety datasets for LLMs, we created Aegis 2.0. This dataset features a novel, fine-grained taxonomy (12 main hazard categories, 9 subcategories) for classifying risks. It contains over 34,000 human-LLM interactions, annotated via a hybrid human+LLM jury pipeline. Crucially, lightweight models fine-tuned on Aegis 2.0 match the performance of models trained on much larger, non-commercial datasets. We also introduce a safety+topic training blend that improves model adaptability to new risks. All data and models will be open-sourced to advance LLM safety research.
 
 - [Improved Large Language Model Jailbreak Detection via Pretrained Embeddings](https://arxiv.org/pdf/2412.01547)
     - Erick Galinkin, Martin Sablotny
@@ -447,7 +465,7 @@ You may include multiple keywords, but to maintain consistency, we recommend usi
 
 This repository references the initial template provided by the OSU-NLP-Group. See the original work at [GUI-Agents-Paper-List](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List).
 
-We are grateful for their excellent work and highly recommend checking out and starring their curated collection of GUI agent papers. Furthermore, we extend our sincere gratitude to all contributors of this repository. If you are interested in our work, please star our repository!
+We are grateful for their excellent works and highly recommend checking out and starring their curated collection of GUI agent papers. Furthermore, we extend our sincere gratitude to all contributors of this repository. If you are interested in our work, please star our repository!
 
 
 

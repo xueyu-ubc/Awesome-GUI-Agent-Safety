@@ -18,6 +18,15 @@
     - 🔑 Key: [benchmark], [evaluation], [misuse], [injection]
     - 📖 TLDR: Computer use agents, LLM-based systems interacting with GUIs via screenshots or accessibility trees, lack safety evaluation. This paper introduces OS-HARM, a benchmark built on OSWorld with 150 tasks across three harm categories: deliberate misuse, prompt injection, and model misbehavior (e.g., harassment, data exfiltration). An automated judge assesses both accuracy and safety. Frontier models (like o4-mini, Claude 3.7 Sonnet, Gemini 2.5 Pro) evaluated show high compliance with misuse queries, vulnerability to static prompt injections, and occasional unsafe actions. [Github](https://github.com/tml-epfl/os-harm)
 
+- [Qwen3Guard Technical Report](https://arxiv.org/pdf/2510.14276)
+    -  Qwen Team
+    - 🏛️ Institutions:  Qwen Team
+    - 📅 Date: Oct. 16, 2025
+    - 📑 Publisher: arXiv
+    - 💻 Env: [Misc]
+    - 🔑 Key: [benchmark], [evaluation], [AI-Safety], [Model]
+    - 📖 TLDR: Existing LLM safety classifiers are limited by binary labels and delayed detection. We introduce Qwen3Guard, a multilingual safety model series featuring: (1) Generative Qwen3Guard for fine‑grained tri‑class classification (safe/controversial/unsafe). (2) Stream Qwen3Guard for real‑time, token‑level monitoring during streaming generation.
+
 - [Safeguarding Mobile GUI Agent via Logic-based Action Verification](https://arxiv.org/abs/2503.18492)
     - Jungjae Lee, Dongjae Lee, Chihun Choi, Youngmin Im, Jaeyoung Wi, Kihong Heo, Sangeun Oh, Sunjae Lee, Insik Shin
     - 🏛️ Institutions: KAIST, Korea University, Sungkyunkwan University
@@ -116,6 +125,15 @@
     - 💻 Env: [Mobile]
     - 🔑 Key: [evaluation], [injection], [attack]
     - 📖 TLDR: This paper introduces the concept of Active Environment Injection Attack (AEIA), where attackers disguise malicious actions as environmental elements to disrupt AI agents' decision-making processes. The authors propose AEIA-MN, an attack scheme leveraging mobile notifications to evaluate the robustness of multimodal large language model-based mobile agents. Experimental results demonstrate that even advanced models are highly vulnerable to such attacks, with success rates reaching up to 93% in the AndroidWorld benchmark.
+
+- [AEGIS2.0: A Diverse AI Safety Dataset and Risks Taxonomy for Alignment of LLM Guardrails](https://arxiv.org/pdf/2501.09004)
+    -  Shaona Ghosh, Prasoon Varshney, Makesh Narsimhan Sreedhar, Aishwarya Padmakumar, Traian Rebedea, Jibin Rajan Varghese, Christopher Parisien
+    - 🏛️ Institutions:  Nvidia
+    - 📅 Date: Jan. 15, 2025
+    - 📑 Publisher: arXiv
+    - 💻 Env: [Misc]
+    - 🔑 Key: [dataset], [evaluation], [AI-Safety]
+    - 📖 TLDR: To address the lack of high-quality, commercially usable safety datasets for LLMs, we created Aegis 2.0. This dataset features a novel, fine-grained taxonomy (12 main hazard categories, 9 subcategories) for classifying risks. It contains over 34,000 human-LLM interactions, annotated via a hybrid human+LLM jury pipeline. Crucially, lightweight models fine-tuned on Aegis 2.0 match the performance of models trained on much larger, non-commercial datasets. We also introduce a safety+topic training blend that improves model adaptability to new risks. All data and models will be open-sourced to advance LLM safety research.
 
 - [SafeBench: A Safety Evaluation Framework for Multimodal Large Language Models](https://arxiv.org/pdf/2410.18927)
     - Zonghao Ying, Aishan Liu, Siyuan Liang, Lei Huang, Jinyang Guo, Wenbo Zhou, Xianglong Liu, Dacheng Tao
